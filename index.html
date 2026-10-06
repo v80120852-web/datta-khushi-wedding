@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>दत्ता आणि खुशी - शुभविवाह निमंत्रण</title>
+  <!-- पारंपरिक मराठी फॉन्ट -->
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #fff9e6; /* पिवळसर शुभ रंग */
+      color: #660000; /* गडद लाल/मरून रंग */
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, #fffdf8 0%, #fdebd0 100%);
+      padding: 20px;
+      border: 15px solid #b8860b; /* सोनेरी बॉर्डर */
+      border-radius: 20px;
+      margin: 10px;
+    }
+    .shree {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 20px;
+      font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    .names {
+      font-family: 'Tiro Devanagari Marathi', serif;
+      font-size: 3.5rem;
+      color: #cc0000;
+      margin: 10px 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    .wed-text {
+      font-size: 1.5rem;
+      color: #b8860b;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .date-main {
+      font-size: 1.4rem;
+      font-weight: bold;
+      background-color: #660000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    h2 {
+      font-family: 'Tiro Devanagari Marathi', serif;
+      font-size: 2.5rem;
+      color: #cc0000;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      text-decoration-color: #b8860b;
+    }
+    .details {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+    .countdown-title {
+      font-size: 1.5rem;
+      color: #660000;
+      margin-bottom: 20px;
+      font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .time-box {
+      background: #cc0000;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      min-width: 75px;
+      border: 2px solid #b8860b;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .time-box span {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .time-box p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #cc0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: 2px solid #b8860b;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .button:hover {
+      background: #990000;
+    }
+    .footer {
+      background: #660000;
+      color: #fdebd0;
+      padding: 30px 20px;
+      font-size: 1.2rem;
+      border-top: 5px solid #b8860b;
+    }
+    .decor {
+      font-size: 2rem;
+      color: #b8860b;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="shree">॥ श्री गणेशाय नमः ॥</div>
+    <div class="decor">❀ ❁ ❀</div>
+    <p>सस्नेह निमंत्रण<br>आमच्या येथे होणाऱ्या शुभ विवाहास उपस्थित राहून<br>वधू-वरास शुभाशीर्वाद द्यावेत ही नम्र विनंती.</p>
+    
+    <h1 class="names">चि. दत्ता</h1>
+    <div class="wed-text">संग</div>
+    <h1 class="names">चि. सौ. कां. खुशी</h1>
+    
+    <div class="date-main">रविवार, ६ जून २०२७</div>
+  </div>
+
+  <section>
+    <h2>शुभमुहूर्त</h2>
+    <div class="details">
+      <strong>रविवार, दि. ६ जून २०२७</strong><br>
+      सकाळी ११:०० वाजता
+    </div>
+    
+    <div class="countdown-title">लग्नघटिका समीप आली...</div>
+    <div class="countdown">
+      <div class="time-box"><span id="days">00</span><p>दिवस</p></div>
+      <div class="time-box"><span id="hours">00</span><p>तास</p></div>
+      <div class="time-box"><span id="minutes">00</span><p>मिनिटे</p></div>
+      <div class="time-box"><span id="seconds">00</span><p>सेकंद</p></div>
+    </div>
+  </section>
+
+  <section style="background-color: #fff4d9; border-top: 3px dashed #b8860b;">
+    <h2>विवाह स्थळ</h2>
+    <div class="details">
+      तुमच्या उपस्थितीने आणि आशीर्वादाने<br>हा सोहळा अधिक आनंददायी होईल, तरी अगत्य येणे करणे.
+    </div>
+    <!-- खालील लिंकवर क्लिक केल्यास थेट गुगल मॅप ओपन होईल -->
+    <a href="https://maps.app.goo.gl/b6GFBTrPjk3Sy1Yt7" target="_blank" class="button">📍 गुगल मॅपवर रस्ता पहा</a>
+  </section>
+
+  <div class="footer">
+    <p>|| आपली नम्र उपस्थिती, हाच आमचा खरा आनंद ||</p>
+    <div class="decor" style="color: #fdebd0;">✧ ✧ ✧</div>
+    <h3 style="font-family: 'Tiro Devanagari Marathi', serif; font-size: 2rem; margin: 10px 0;">निमंत्रक: सर्व नातेवाईक आणि मित्रपरिवार</h3>
+  </div>
+
+  <script>
+    // लग्नाची तारीख आणि वेळ सेट केली आहे
+    const countDownDate = new Date("Jun 6, 2027 11:00:00").getTime();
+
+    // दर सेकंदाला काउन्टडाऊन अपडेट करण्यासाठी
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
